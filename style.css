@@ -1,0 +1,170 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 20px;
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+}
+
+.top-header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: ;
+}
+
+.top-left:hover {
+  background-color: gainsboro;
+}
+
+.top-right {
+  font-size: 2rem;
+}
+
+.middle-header {
+  margin: 20px auto;
+}
+
+.middle-header p {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+.bottom-center p {
+  font-size: 6rem;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.bottom-header {
+  display: flex;
+}
+
+.bottom-center {
+  background-color: white;
+  flex: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+}
+
+.bdr-bottom {
+  border-bottom: white 8px solid;
+}
+
+main {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25%;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guess {
+  display: block;
+  font-size: 4rem;
+  padding: 0.5rem;
+  width: 17rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: black;
+  border: white 2px solid;
+  color: white;
+}
+
+.btn-check {
+  display: inline-block;
+  padding: 10px 85px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-check:hover {
+  background-color: gainsboro;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-side > p {
+  font-size: 2rem;
+}
+
+.message {
+  flex: 2;
+}
+
+.label-score,
+.label-highscore {
+  flex: 1;
+}
+
+.score,
+.highscore {
+}
+
+@media only screen and (max-width: 738px) {
+  main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .right-side {
+    margin-top: 2rem;
+  }
+
+  .message {
+    margin-bottom: 1rem;
+  }
+}

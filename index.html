@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Scribble Pad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <button class="top-left">Again!</button>
+      <p class="top-right">(Between 1 and 20)</p>
+    </header>
+    <div class="middle-header">
+      <p>Guess My Number</p>
+    </div>
+    <div class="bottom-header">
+      <div class="bottom-left">
+        <div class="left bdr-bottom"></div>
+        <div class="left"></div>
+      </div>
+      <div class="bottom-center"><p>?</p></div>
+      <div class="bottom-right">
+        <div class="right bdr-bottom"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+    <main>
+      <section class="left-side">
+        <input type="number" class="guess" />
+        <button class="btn-check">Check!</button>
+      </section>
+      <section class="right-side">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
